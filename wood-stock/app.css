@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+/* 
+there are some repetitions in the code but
+they are there just
+for pedagological reasons, part of the code could be re-used.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  box-sizing: border-box; }
+
+.title-content {
+  height: 189px;
+  margin-top: 7.5%;
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 0.5em;
+  color: white; }
+  .title-content .line {
+    width: 181px;
+    height: 9px;
+    background-color: #BC9A44;
+    margin: 0px auto;
+    position: absolute;
+    top: 49px;
+    left: 110px; }
+
+section {
+  width: 1130px;
+  height: 445px;
+  margin: 0 auto; }
+
+.hero {
+  position: absolute;
+  display: flex;
+  z-index: -1; }
+
+.img-bg {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 640px; }
+  .header .l-block {
+    width: 50vw;
+    height: 640px;
+    background-color: black; }
+    .header .l-block .left {
+      background-image: url("./assets/img/wood-right.png");
+      opacity: 0.2; }
+  .header .r-block {
+    width: 50vw;
+    height: 580px;
+    background-color: black; }
+    .header .r-block .right {
+      background-image: url("./assets/img/wood-left.png");
+      opacity: 0.2; }
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto; }
+  .about-section .image-container {
+    position: relative; }
+    .about-section .image-container .layout {
+      position: absolute;
+      width: 334px;
+      height: 446px;
+      background-color: #BC9A44;
+      top: -40px;
+      z-index: -1;
+      left: -81px;
+      opacity: 0.4; }
+  .about-section .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 485px;
+    justify-content: space-around; }
+    .about-section .text-container .title-container h3 {
+      border-left: 9px solid #BC9A44;
+      padding-left: 20px; }
+    .about-section .text-container .text-wrapper {
+      width: 445px; }
+      .about-section .text-container .text-wrapper p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+        font-family: 'Raleway';
+        color: #827E7E; }
+
+/* shop */
+.shop {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto; }
+  .shop .image-container2 {
+    position: relative; }
+    .shop .image-container2 .layout2 {
+      width: 519px;
+      height: 345px;
+      background-color: #BC9A44;
+      position: absolute;
+      right: -26px;
+      top: -26px;
+      z-index: -1;
+      opacity: 0.4; }
+  .shop .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 485px;
+    justify-content: space-around; }
+    .shop .text-container .title-container h3 {
+      border-left: 9px solid #BC9A44;
+      padding-left: 20px; }
+    .shop .text-container .text-wrapper {
+      width: 445px; }
+      .shop .text-container .text-wrapper p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+        font-family: 'Raleway';
+        color: #827E7E; }
+
+.button-container {
+  width: 204px;
+  height: 54px; }
+
+button {
+  background-color: white;
+  border: 2px solid #BC9A44;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative; }
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -130px;
+  width: 151px;
+  height: 0.5em;
+  border-top: 2px solid black; }
+
+/* box container */
+.boxes {
+  margin-top: 170px;
+  display: flex;
+  justify-content: space-around; }
+
+.box {
+  width: 400px;
+  height: 416px;
+  display: flex;
+  padding: 25px 26px 81px;
+  padding-bottom: 80px;
+  -webkit-box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.13); }
+
+.box p {
+  align-self: flex-end; }
+
+/*# sourceMappingURL=app.css.map */
