@@ -1,0 +1,206 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*
+https://commons.wikimedia.org/wiki/File:Taiwan_Chinese.png
+https://www.flickr.com/photos/nodx2/292173891
+https://www.vectorizer.io
+*/
+body {
+    max-width: 90%;
+    margin: 0 auto;
+    background: #eb01a5;
+    /* fallback */
+    background-image: url("../resources/paper-cut.svg");
+    background-image: url("../resources/paper-cut.svg"), linear-gradient(to right, #BA8742 0%, #E6B779 50%, #BA8742 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    font-family: 'Open Sans', sans-serif;
+    color: #462901;
+}
+
+.header-spacer-top {
+    padding-top: 40px;
+}
+
+.header-spacer-bottom {
+    padding-bottom: 25px;
+}
+
+.title {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 52x;
+}
+
+h2 {
+    color: #462901;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.story {
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: 1px;
+    color: #00301C;
+    font-size: 17px;
+}
+
+header p:first-of-type {
+    font-weight: bold;
+}
+
+a:link {
+    color: #539D7E;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+a:visited {
+    color: #2E805C;
+}
+
+a:hover {
+    color: #176845;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* blockquote */
+.story {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #E6B779;
+}
+
+.author {
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sub-header {
+    display: table;
+    width: 100%;
+}
+
+header > .sub-header > figure,
+.text-box,
+.sub-header {
+    background-color: rgba(255, 255, 0, 0.66);
+    /*background-color: yellow;*/
+    margin: 0 auto;
+    margin-right: 6px;
+}
+
+.pad-80 {
+    padding: 80px 0px;
+}
+
+.pad-left-right-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+q {
+    font-size: 160%;
+    background-color: #b4b0ae;
+    border-left: 3px solid;
+    padding: 0px 30px;
+}
+
+.story p q {
+    font-style: italic;
+}
+
+hr,
+.hidden {
+    display: none;
+}
+
+.bad {
+    color: red;
+    text-transform: uppercase;
+}
+
+.good {
+    color: green;
+    text-transform: uppercase;
+}
+
+.villagers {
+    border-left-color: #06ffe2;
+}
+
+.farmer {
+    border-left-color: #ff6c00;
+}
+
+figure,
+.text-box {
+    width: 300px;
+
+}
+
+.padding-bottom {
+    padding-bottom: 7px;
+    /* 5 */
+}
+
+.padding-bottom:first-of-type {
+    padding-bottom: 7px;
+}
+
+.padding-left {
+    padding-left: 4px;
+}
+
+thead tr th {
+    background: #22c981;
+}
+
+tr:nth-child(even) {
+    background: #CCC;
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+}
+
+.float-left {
+    float: left;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.notification {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 9px 14px;
+    background-color: #fff;
+    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%, 0% 20%);
+}
+
+.notification:hover {
+    cursor: pointer;
+    background-color: #afd3c4;
+}
+
+.notification:hover p {
+    color: #176845;
+}
+
+footer {
+    padding-top: 33px;
+    height: 120px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
