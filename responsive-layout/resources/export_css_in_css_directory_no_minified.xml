@@ -1,0 +1,22 @@
+<TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="--no-cache --update $FileName$:$FileParentDir$/css/$FileNameWithoutExtension$.css" />
+    <option name="checkSyntaxErrors" value="true" />
+    <option name="description" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="scss" />
+    <option name="immediateSync" value="true" />
+    <option name="name" value="SCSS save css in css folder" />
+    <option name="output" value="$FileParentDir$/css/$FileNameWithoutExtension$.css" />
+    <option name="outputFilters">
+      <array />
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="sass" />
+    <option name="runOnExternalChanges" value="true" />
+    <option name="scopeName" value="All Places" />
+    <option name="trackOnlyRoot" value="true" />
+    <option name="workingDir" value="$FileDir$" />
+    <envs />
+  </TaskOptions>
+</TaskOptions>

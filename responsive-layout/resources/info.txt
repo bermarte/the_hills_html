@@ -1,0 +1,5 @@
+PhpStorm Watch
+Arguments:
+--no-cache --update $FileName$:$FileParentDir$/css/$FileNameWithoutExtension$.css --style compressed
+Output paths to refresh:
+$FileParentDir$/css/$FileNameWithoutExtension$.css
