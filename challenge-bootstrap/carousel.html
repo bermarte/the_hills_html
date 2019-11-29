@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <title>exercise-carousel</title>
+</head>
+<body>
+<div class="max-width"><!-- wrapper row max-width -->
+    <header>
+        <nav class="max-width navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Carousel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main id="top">
+        <!-- carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active custom-max-height">
+                    <img class="d-block w-100" src="https://loremflickr.com/373/187/abstract?random=3" alt="First slide">
+                    <div class="carousel-caption text-shadow text-left">
+                        <h3 class="d-none d-sm-none d-md-block">Lorem ipsum</h3>
+                        <p class="d-none d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>A amet eligendi est id ipsa, voluptatum.</p>
+                        <button type="button" class="btn btn-primary">Sign up today</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item custom-max-height">
+                    <img class="d-block w-100" src="https://loremflickr.com/373/187/abstract?random=4" alt="Second slide">
+                    <div class="carousel-caption text-shadow text-left">
+                        <h3 class="d-none d-sm-none d-md-block">Duis ipsum nisi blandit tincidunt</h3>
+                        <p class="d-none d-sm-none d-md-block">Fermentum at habitant eu quam suspendisse viverra volutpat ullamcorper lacinia.<br>Vulputate tellus dolor odio eros.</p>
+                        <button type="button" class="btn btn-primary">Sign up today</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item custom-max-height">
+                    <img class="d-block w-100" src="https://loremflickr.com/373/187/abstract?random=5" alt="Third slide">
+                    <div class="carousel-caption text-shadow text-left">
+                        <h3 class="d-none d-sm-none d-md-block">Tristique integer duis sit nulla ligula</h3>
+                        <p class="d-none d-sm-none d-md-block">Tellus lorem aptent himenaeos ipsum praesent arcu tempor laoreet nisi tempus.<br>Hendrerit fusce inceptos tincidunt class nulla.</p>
+                        <button type="button" class="btn btn-primary">Sign up today</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item custom-max-height">
+                    <img class="d-block w-100" src="https://loremflickr.com/373/187/abstract?random=6" alt="Third slide">
+                    <div class="carousel-caption text-shadow text-left">
+                        <h3 class="d-none d-sm-none d-md-block">Etiam tristique facilisis metus feugiat pharetra</h3>
+                        <p class="d-none d-sm-none d-md-block">Nam libero nisl, lacinia aliquet lacus a, efficitur posuere eros.<br>Donec hendrerit dui sit amet feugiat dapibus.</p>
+                        <button type="button" class="btn btn-primary">Sign up today</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item custom-max-height">
+                    <img class="d-block w-100" src="https://loremflickr.com/373/187/abstract?random=7" alt="Third slide">
+                    <div class="carousel-caption text-shadow text-left">
+                        <h3 class="d-none d-sm-none d-md-block">Sed faucibus in lorem vitae volutpat</h3>
+                        <p class="d-none d-sm-none d-md-block">Etiam tristique facilisis metus feugiat pharetra.<br>Ut et orci non risus finibus ullamcorper vitae ut lorem.</p>
+                        <button type="button" class="btn btn-primary">Sign up today</button>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- cards -->
+
+
+        <!--<section class="row">-->
+            <section class="row py-5 mx-5">
+
+                <div class="card text-center col-md-4 col-sm-6 border-0">
+                    <div class="col">
+                        <img src="https://loremflickr.com/200/200/abstract?random=8" class="card-img-top rounded-circle img-shadow max-img-round" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Vitae varius mauris #1</h2>
+                        <p class="card-text">Nam dignissim vehicula placerat. Vivamus maximus elementum turpis quis vulputate. Pellentesque sodales volutpat lacus quis rhoncus.</p>
+                        <a href="#" class="btn btn-secondary">View details</a>
+                    </div>
+                </div>
+
+                <div class="card text-center col-md-4 col-sm-6 border-0">
+                    <div class="col">
+                        <img src="https://loremflickr.com/200/200/abstract?random=9" class="card-img-top rounded-circle img-shadow max-img-round" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Vitae varius mauris #2</h2>
+                        <p class="card-text">Nam dignissim vehicula placerat. Vivamus maximus elementum turpis quis vulputate. Pellentesque sodales volutpat lacus quis rhoncus.</p>
+                        <a href="#" class="btn btn-secondary">View details</a>
+                    </div>
+                </div>
+
+                <div class="card text-center col-md-4 col-sm-6 border-0">
+                    <div class="col">
+                        <img src="https://loremflickr.com/200/200/abstract?random=10" class="card-img-top rounded-circle img-shadow max-img-round" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Vitae varius mauris #3</h2>
+                        <p class="card-text">Nam dignissim vehicula placerat. Vivamus maximus elementum turpis quis vulputate. Pellentesque sodales volutpat lacus quis rhoncus.</p>
+                        <a href="#" class="btn btn-secondary">View details</a>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- text section 1 -->
+        <section class="spacer">
+            <div class="w_100">
+                <div class="row d-table border-bottom py-5 mx-5">
+
+                    <div class="col-md-7 col-sm-12 d-md-table-cell d-sm-block align-middle">
+                        <h1 class="text-dark">Nunc cursus risus nec neque <span class="text-secondary">varius imperdiet</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consequuntur deserunt dignissimos distinctio, eaque exercitationem illum inventore iste labore magni, odio provident qui sapiente sed totam ullam, voluptatem voluptatum!</p>
+                    </div>
+
+                    <div class="col-md-5 col-sm-1 d-sm-block">
+                        <img src="https://loremflickr.com/500/500/abstract?random=9" class="text-right" alt="img" height="400" width="400">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- text section 2 -->
+        <section>
+            <div class="w_100">
+                <div class="row d-table border-bottom py-5 mx-5">
+
+                    <div class="col-md-5 col-sm-1 d-sm-block">
+                        <img src="https://loremflickr.com/500/500/abstract?random=10" class="text-right" alt="img" height="400" width="400">
+                    </div>
+
+                    <div class="col-md-7 col-sm-12 d-md-table-cell d-sm-block align-middle">
+                        <h1 class="text-dark">Nunc cursus risus nec neque <span class="text-secondary">varius imperdiet</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consequuntur deserunt dignissimos distinctio, eaque exercitationem illum inventore iste labore magni, odio provident qui sapiente sed totam ullam, voluptatem voluptatum!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- text section 3 -->
+        <section>
+            <div class="w_100">
+                <div class="row d-table border-bottom py-5 mx-5">
+
+                    <div class="col-md-7 col-sm-12 d-md-table-cell d-sm-block align-middle">
+                        <h1 class="text-dark">Nunc cursus risus nec neque <span class="text-secondary">varius imperdiet</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consequuntur deserunt dignissimos distinctio, eaque exercitationem illum inventore iste labore magni, odio provident qui sapiente sed totam ullam, voluptatem voluptatum!</p>
+                    </div>
+
+                    <div class="col-md-5 col-sm-1 d-sm-block">
+                        <img src="https://loremflickr.com/500/500/abstract?random=11" class="text-right" alt="img" height="400" width="400">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container py-5 mx-5">
+        <ul class="list-unstyled d-sm-block d-md-inline">
+            <li class="d-sm-block d-md-inline">&copy; 2018-2019 Company, Inc.</li>
+            <li class="d-sm-block d-md-inline"><a href="#">Privacy</a></li>
+            <li class="d-sm-block d-md-inline">- <a href="#">Terms</a></li>
+            <li class="d-sm-block d-md-inline to-the-right"><a href="#top">Back to top</a></li>
+        </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
