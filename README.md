@@ -25,7 +25,7 @@ made with https://github.com/SeppeVerhavert<br>
 
 # FlyAway
 A travel agency
-https://joostvannieu.github.io/FlyAway/index.html
+https://bermarte.github.io/the_hills_html/FlyAway/index.html
 
 ## Folder structure:
 Main folder: contains html
@@ -66,4 +66,4 @@ Extra styling on top of bootstrap
 A simple contact form for leaving feedback
 
 ### Moodboard/Mockup: 
-![alt text](https://bermarte.github.io/the_hills_html/FlyAway/blob/master/Resources/Schema.png)
+![](https://bermarte.github.io/the_hills_html/FlyAway/Resources/Schema.png)
