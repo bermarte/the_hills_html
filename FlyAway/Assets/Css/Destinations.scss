@@ -1,0 +1,30 @@
+
+.h2 {text-align: left;}
+
+ul li {list-style-type:none;}
+
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#id-parllax-image-africa-1 {
+  background-image: url("../Media/Imgs/parallax-images/africa/africa1.jpg");
+}
+
+#id-parllax-image-africa-2 {
+  background-image: url("../Media/Imgs/parallax-images/africa/tanzania.jpg");
+}
+
+#discover { font-size: 60px;
+color:white;}
+
+.introductionz { font-weight: bold;
+font-style: italic;}
+
+.fix-image-width{
+    object-fit: cover;
+}

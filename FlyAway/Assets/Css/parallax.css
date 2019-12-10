@@ -1,0 +1,45 @@
+.parallax { 
+  height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#id-parllax-image{
+    background-image: url("../Media/Imgs/america/new-york.jpg");
+}
+
+#id-parllax-image-2{
+    background-image: url("../Media/Imgs/europe/barcelona.jpg");
+}
+
+#id-parllax-image-asia-1{
+    background-image: url("../Media/Imgs/parallax-images/asia/Background-Fuji.jpg");
+}
+
+#id-parllax-image-asia-2{
+    background-image: url("../Media/Imgs/parallax-images/asia/Background-city.jpg");
+}
+#id-parallax-image-south-america-1{
+    background-image: url("../Media/Imgs/parallax-images/south-america/brasil.jpeg");
+}
+
+#id-parallax-image-south-america-2{
+    background-image: url("../Media/Imgs/parallax-images/south-america/chile.jpg");
+}
+
+#id-parallax-image-north-america-1{
+    background-image: url("../Media/Imgs/parallax-images/north-america/new-york.jpg");
+}
+
+#id-parallax-image-north-america-2{
+    background-image: url("../Media/Imgs/parallax-images/north-america/las-vegas.jpg");
+}
+
+#id-parllax-image-europe-1{
+    background-image: url("../Media/Imgs/europe/san-marino-italie.jpg");
+}
+#id-parllax-image-europe-2{
+    background-image: url("../Media/Imgs/europe/san-sebastian-spain.jpg");
+}

@@ -1,0 +1,71 @@
+.map {
+    min-height: 400px;
+}
+
+.icon-holder img {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.contact-data {
+    line-height: 3em;
+    min-width: 204px;
+    /*font-size:12px;*/
+}
+
+.icon-holder img:hover {
+    filter:
+        invert(0.5) sepia(1) hue-rotate(180deg) saturate(4) brightness(1);
+}
+
+.text-data {
+    padding-left: 12px;
+}
+
+.contact-data a {
+    text-decoration: none;
+}
+
+.logo-big img{
+    margin: 0 auto;
+}
+
+/* less than 1199px */
+@media (max-width: 1199px) {
+    .text-data {
+        padding-left: 0px;
+    }
+    .icon-holder{
+        display: none;
+    }
+
+}
+
+/* less than 768px */
+@media (max-width: 767.98px) {
+    .contact-data {
+        font-size: 12px;
+    }
+
+    .text-data {
+        padding-left: 0px;
+    }
+    
+}
+
+/* less than 576px */
+@media (max-width: 575.98px) {
+    .contact-data {
+        font-size: 16px;
+    }
+
+    .text-data {
+        padding-left: 12px;
+    }
+    .icon-holder{
+        display: inline-block;
+    }
+}

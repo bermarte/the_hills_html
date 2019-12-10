@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asia</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/footer-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/style-hotels.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/Destinations.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/parallax.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header with Nav and carousel-->
+    <header>
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <a href="#" class="pull-left"><img src="Assets/Media/Imgs/small-logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Continents
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item fly-away-blue" href="europe.html">Europe</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fly-away-blue" href="north-america.html">North America</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fly-away-blue" href="south-america.html">South America</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fly-away-blue" href="africa.html">Africa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fly-away-blue" href="asia.html">Asia</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fly-away-blue disabled" href="#">Australia</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fly-away-blue disabled" href="#">Antarctica</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="Assets/Media/Imgs/asia/Carousel-cockpit.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block text-left bg-dark-semitransparent my-5">
+                        <h3>Take Flight</h3>
+                        <p>Jump on an airplane and fly to the other side of the world, into an intruiging culture unlike our own.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Assets/Media/Imgs/asia/Carousel-Suzhou.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block text-left bg-dark-semitransparent my-5">
+                        <h3>Exotic City Trips</h3>
+                        <p>Walk through ancient streets and buildings that have withstood the ravages of time and are to this day lovingly taken care of.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Assets/Media/Imgs/asia/Carousel-Nature.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block text-left bg-dark-semitransparent my-5">
+                        <h3>Hike Through Nature</h3>
+                        <p>If the bustling cities aren't anything for you, walk instead through forests and plains together with the locals and the wildlife.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <!--Popular destinations-->
+    <div class="container pop-container my-5">
+        <div class="row my-4 this-row">
+            <img src="Assets/Media/Imgs/asia/india.jpeg" alt="India" class="col-md-4 img-pop fix-image-width">
+            <div class="col-md-8 pop-col">
+                <div class="pop-text">
+                    <h2>Popular destinations</h2>
+                    <p>
+                        The Far Eastern continent is home to many countries whose history and beauty are as rich as it's
+                        culture.
+                        From the bustling streets in India to the cherry blosoms in Japan, each nation most certainly has
+                        something unique to offer that you can't get anywhere else in the world. Scroll down to browse our
+                        selection of travels that will take you to some of the most popular vacation destinations.
+                    </p>
+                    <a href="#" class="btn btn-primary mvbutton">DISCOVER NOW</a>
+                </div>
+                <div class="pop-list row mt-3">
+                    <ul class="list-group col-md-3">
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">India</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Sri Lanka</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">HongKong</a></li>
+
+                    </ul>
+                    <ul class="list-group col-md-3">
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Thailand</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Vietnam</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Japan</a></li>
+
+                    </ul>
+                    <ul class="list-group col-md-3">
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Indonesia</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">China</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Singapore</a></li>
+                    </ul>
+                    <ul class="list-group col-md-3">
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Taiwan</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Saudi-Arabia</a></li>
+                        <li class="fly-away-blue text-center"><a href="#" class="list-group-item text-truncate">Russia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active text-truncate" id="list-home-list" data-toggle="list" href="#list-home" role="tab">Taiwan</a>
+                    <a class="list-group-item list-group-item-action text-truncate" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab">Indonesia</a>
+                    <a class="list-group-item list-group-item-action text-truncate" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab">Vietnam</a>
+                    <a class="list-group-item list-group-item-action text-truncate" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab">Saudi-Arabia</a>
+                </div>
+            </div>
+            <div class="col-md-5 text-justify">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        Generous like its 23 million people, Taiwan offers wondrous vistas, lively traditions and a culture
+                        as luxuriant as Jade Mountain on a sunny day. It's easy to wander around all day and discover
+                        something new on the same path the very next day.
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        Made up of thousands of volcanic islands, Indonesia has many marvels hidden among them. From the
+                        surfer's paradise of Ubud with it's vibrant nightlife to the monkey Island of Ubu, you can be
+                        certain that one of these islands is a perfect fit for you.
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        Vietnam has touristic hot spots for various differing interests. In the capital there is a War
+                        Remnants
+                        Museum that shows how war has shaped modern Vietnam. The Ha Long Bay is the destination to go if you
+                        prefer
+                        your vacations in a more natural fashion and in Hôi An you can find historical towns.
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        Saudi Arabia is home to the holy city of Mecca and the Kaaba, the most important city and location
+                        for Islam. You can also find the prophet's burial place in Medina. In Jeddah there is also the
+                        splendid
+                        Fountain of King Fadh and the old city centre.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="https://geology.com/world/map/map-of-asia.gif" alt="asia" class="img-asia">
+            </div>
+        </div>
+        <div class="row my-4 this-row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top rondo" src="Assets/Media/Imgs/asia/Singapore-Main.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">An ever evolving and changing city with an equally flexible culture,
+                            Signapore is where foodies, explorers, collectors, action seekers, culture shapers, and socialisers
+                            meet―and new experiences are created every day.</p>
+                        <a href="#" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top rondo" src="Assets/Media/Imgs/asia/japan_tokyo_sensoji_temple.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Japan</h5>
+                        <p class="card-text">Japan has various attractions for tourists no matter the season. from historical
+                            sites to the festivals and night life, you can always find something to catch your interest. Come visit
+                            the land of the Rising Sun and enrich yourself with their culture.</p>
+                        <a href="#" class="btn btn-primary">More information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top rondo" src="Assets/Media/Imgs/asia/china_wall_01_big.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">China</h5>
+                        <p class="card-text">Home to the largest wall in the world, China has various points of interest of
+                            historical value, such the Palace Museum in the Forbidden City, Emperor Qinshihuang's famous Mausoleum
+                            and the Temple of Heaven. or perhaps you want to look at the pandas.</p>
+                        <a href="#" class="btn btn-primary">More information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top rondo" src="Assets/Media/Imgs/asia/Thailand.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Thailand</h5>
+                        <p class="card-text">From the Grand Palace in Bangkok to the legendary Phi Phi Islands, there certainly
+                            is no way to not marvel at the beauty this and provides. Or perhaps you'd rather visit the buddhist temples
+                            in Chiang Mai while browsing the local arts and crafts.</p>
+                        <a href="#" class="btn btn-primary">More information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- parallax -->
+    <div class="parallax" id="id-parllax-image-asia-1"></div>
+    <!--Hotels-->
+    <div class="container my-5">
+        <h1>Our Hotels</h1>
+        <div class="row">
+            <div class="col-md-4 p-4">
+                <div class="bg-light p-3 shadow ">
+                    <div class="text-center my-3">
+                        <figure>
+                            <img class="hotel-image" src="Assets/Media/Imgs/asia/hotels/peninsula.png" alt="...">
+                        </figure>
+                    </div>
+                    <div>
+                        <h3>The Peninsula *****</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Bangkok</h6>
+                        <p>
+                            Starting from 170 Euro.
+                        </p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Book now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="bg-light p-3 shadow ">
+                    <div class="text-center my-3">
+                        <figure>
+                            <img class="hotel-image" src="Assets/Media/Imgs/asia/hotels/radisson_blu.png" alt="...">
+                        </figure>
+                    </div>
+                    <div>
+                        <h3>Radisson Blu ****</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Beijing</h6>
+                        <p>
+                            Starting from 140 Euro
+                            <div class="text-right">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    Book now
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="bg-light p-3 shadow ">
+                    <div class="text-center my-3">
+                        <figure>
+                            <img class="hotel-image" src="Assets/Media/Imgs/asia/hotels/Four-Seasons.jpg" alt="...">
+                        </figure>
+                    </div>
+                    <div>
+                        <h3>Four Seasons *****</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Hong Kong</h6>
+                        <p>
+                            Starting from 514 Euro.
+                        </p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Book now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Booking confirmed -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Booking confirmed</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Thank you for traveling with FlyAway, enjoy your vacation!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- parallax -->
+    <div class="parallax" id="id-parllax-image-asia-2"></div>
+    <!--Car rental-->
+    <div class="container my-5">
+        <h1>Rent a car</h1>
+        <div class="row flex-row-reverse car-selector shadow">
+            <div class=" col-md-7 p-4">
+                <form action="MAILTO:CarRental@example.com" method="get" enctype="text/plain" class="form-horizontal">
+                    <div class="customer information">
+                        <label for="name" style="min-width: 55px;">Name:</label> <input type="text" id="name" name="user_name">
+                    </div>
+                    <div class="customer information">
+                        <label for="e-mail" style="min-width: 55px;">E-mail:</label> <input type="text" id="e-mail" name="user_mail">
+                    </div>
+                    <br>
+                    <p> What brand of car would you like to rent?</p>
+                    <label>
+                        <select class="btn btn-primary" name="car_brand">
+                            <option value="Audi" selected>Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Golf">Golf</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Opel">Opel</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label for="msg"></label><textarea id="msg" name="user_message" placeholder="would you like to add something?"></textarea><br>
+                    <input class="btn btn-primary" type="submit" value="Send">
+                </form>
+            </div>
+            <div class="col-md-5 bg-lightblue">
+                <img class="col-md-12" src="Assets/Media/Imgs/KIA_FORT_2015.webp" alt="Car Image">
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="site-footer bg-lightblue mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h4 class="text-uppercase">FlyAway Travel Agency</h4>
+                    <p>is an organisation that helps the
+                        people with a high level of wanderlust to discover the most wonderful places all over the world.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h4 class="text-uppercase">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Travel Partners</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h4 class="text-uppercase">Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li>Sint-Pietersvliet 7</li>
+                        <li>2000 Antwerpen</li>
+                        <li>Belgium</li>
+                        <li><a href="mailto:contact@flyaway.com">contact@flyaway.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+                            <a href="#">FlyAway</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fal fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fal fa-twitter"></i></a></li>
+                            <li><a class="Instagram" href="#"><i class="fal fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Aside to top-->
+    <aside class="to-top">
+        <a href="#">^ Top</a>
+    </aside>
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

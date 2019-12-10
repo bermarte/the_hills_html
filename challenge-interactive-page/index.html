@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>alcatraz events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row banner">
+            <div id="button-1" class="col photo-btns"></div>
+            <div class="col-10 photo"></div>
+            <div id="button-2" class="col photo-btns"></div>
+        </div>
+        <div class="tabs">
+
+            <div class="tab-nav btn-group btn-menu" role="group">
+
+                <button type="button" class="btn btn-primary" id="summary-button">
+                    summary
+                </button>
+                <button type="button" class="btn btn-primary" id="info-button">
+                    info
+                </button>
+                <button type="button" class="btn btn-primary" id="contact-button">
+                    contact
+                </button>
+                <button type="button" class="btn btn-primary" id="lineupt-button">
+                    line-up
+                </button>
+            </div>
+            <div id="summary">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Summary</li>
+                    </ol>
+                </nav>
+
+                <p>
+                    Alcatraz has been a metal festival for the young since 2009. It has relaxed metal atmosphere and
+                    attracts fans of all ages. Thanks to the good reputation it has earned through its versatile line-up
+                    and excellent location, a new stage was added in 2010. They also make a point of including
+                    performances by Belgian bands.
+                </p>
+            </div>
+
+            <div id="info">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Practical info</li>
+                    </ol>
+                </nav>
+                <h2>How to get there?</h2>
+                <p>
+                    Stop busstation Festival: Kortrijk Lange Munte
+                    Stop busstation Parking Xpo (free shuttle service to the festival area)
+                </p>
+                <h2>Location</h2>
+                <p>
+                    Sport Campus Lange Munte Bad Godesberglaan 22
+                    8500 Kortrijk
+                    Belgium
+                </p>
+                <h2>Bikes</h2>
+                <p>
+                    Bicycles and bikes can be parked at the festival site. There is a non-guarded parking space reserved.
+                </p>
+                <h2>Park</h2>
+                <p>
+                    ALCATRAZ PARK & RIDE:
+                    Kennedylaan 100
+                    8500 KORTRIJK (B)
+                </p>
+                <h2>Shuttle sevice</h2>
+
+                <ul>
+                    <li>Thursday: 13.00 – 23.00</li>
+                    <li>Friday: 8.00 – 3.00</li>
+                    <li>Saturday: 8:00 – 3.00</li>
+                    <li>Sunday: 8.00 – 3.00</li>
+                    <li>Monday: 8.00 – 12.30</li>
+                </ul>
+
+            </div>
+            <div id="contact-form">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+                <form class="form-signin" action="mailto:seppe.verhavert@gmail.com" method="post">
+                    <div class="form-section">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Name" class="form-control">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Last name" class="form-control">
+
+
+                        <label for="lname">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-section">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something to us" class="form-control" rows="10" cols="20">
+                    </textarea><br>
+
+                        <input type="submit" value="Send" id="submit">
+                    </div>
+                </form>
+            </div>
+
+            <div id="line-up">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Line up</li>
+                    </ol>
+                </nav>
+
+                <!-- line up -->
+
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/saxon.jpg" class="card-img-top" alt="saxon">
+                            <div class="card-body">
+                                <h5 class="card-title">Saxon</h5>
+                                <p class="card-text">Formed in 1976 in Barnsley, UK, Saxon are true giants of the NWOBHM movement.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/avatar.jpg" class="card-img-top" alt="Avatar">
+                            <div class="card-body">
+                                <h5 class="card-title">Avatar</h5>
+                                <p class="card-text">One of the most eye-catching bands. industrial sound and a visual theatricality reminiscent of Alice Cooper.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/avantasia.jpg" class="card-img-top" alt="Avantasia">
+                            <div class="card-body">
+                                <h5 class="card-title">Avantasia</h5>
+                                <p class="card-text">Avantasia is a German supergroup metal opera project created by Tobias Sammet, vocalist of the band Edguy. It has been characterized as a rock opera.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- cards-->
+
+            <!-- counter -->
+            <div id="counter">
+                <p class="how-many">
+                    More than<br>
+                    <span class="badge badge-secondary">N</span><br>
+                    visitors!
+                </p>
+
+                <p class="how-many">
+                    More than<br>
+                    <span class="badge badge-secondary">N</span><br>
+                    artists!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

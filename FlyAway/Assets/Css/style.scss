@@ -1,0 +1,114 @@
+$font-color: #333333;
+$fly-away-blue: #0088ce;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Lato Medium", sans-serif;
+  color: $font-color;
+  line-height: 2em;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Lato Heavy";
+  text-transform: uppercase;
+  color: $fly-away-blue;
+}
+.fly-away-blue a{
+  color: $fly-away-blue;
+  margin: 10px 0;
+}
+.fly-away-blue a:hover{
+  color: white;
+  text-decoration: none;
+  background-color: $fly-away-blue;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: $fly-away-blue;
+}
+.fly-away-blue{
+  color: $fly-away-blue;
+}
+.btn-primary{
+  background-color: $fly-away-blue;
+}
+.pop-col{
+  text-align: justify;
+  padding: 0 50px;
+}
+.list-group-item.active{
+  background-color: $fly-away-blue;
+  border-color: $fly-away-blue;
+}
+.bg-light{
+  background-color: white !important;
+  border: 1px solid #dddddd;
+}
+.car-selector{
+  border: 1px solid $fly-away-blue;
+}
+.bg-lightblue{
+  background-color: #e2f3fe;
+}
+textarea{
+  resize: none;
+}
+.site-footer{
+  color: $font-color;
+}
+.site-footer a{
+  color: $font-color;
+}
+.site-footer a:hover{
+  color: $fly-away-blue;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+  color: $fly-away-blue;
+}
+.to-top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+}
+.to-top a:hover{
+  text-decoration: none;
+}
+/*Homepage*/
+.transparent-frame{
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+#hot-topic-1{
+  background-color: darkgrey;
+  background-image: url("../Media/Imgs/homepage/safari.jpg");
+  background-size: cover;
+  width: 100%;
+}
+#hot-topic-2{
+  background-color: darkgrey;
+  background-image: url("../Media/Imgs/homepage/roadtrip.jpg");
+  background-size: cover;
+  width: 100%;
+}
+#hot-topic-3{
+  background-color: darkgrey;
+  background-image: url("../Media/Imgs/homepage/wine-tour.jpg");
+  background-size: cover;
+  width: 100%;
+}
+#hot-topic-4{
+  background-color: darkgrey;
+  background-image: url("../Media/Imgs/homepage/carnival.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.last-minute-destination {
+
+  width: 100%; }
+
+.last-minute-destination img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; }

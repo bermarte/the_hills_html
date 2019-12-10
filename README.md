@@ -17,3 +17,8 @@ https://bermarte.github.io/the_hills_html/social-impact-dierenasiel-schoten/<br>
 one pager website
 restyling of http://www.dierenasielschoten.be/<br>
 template used: Prologue by HTML5 UP, html5up.net | @ajlkn
+
+# challenge-interactive-page
+Learn to work together with a frontend designer and a frontend programmer<br>
+https://bermarte.github.io/the_hills_html/challenge-interactive-page/<br>
+made with https://github.com/SeppeVerhavert<br>

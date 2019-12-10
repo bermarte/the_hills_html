@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car rental template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row">
+        <div class=" col-md-7 p-4">
+            <form action="MAILTO:CarRental@example.com" method="get" enctype="text/plain" class="form-horizontal">
+                <div class="customer information">
+                    <label for="name">Name:</label> <input type="text" id="name" name="user_name">
+                </div>
+                <div class="customer information">
+                    <label for="e-mail">E-mail:</label> <input type="text" id="e-mail" name="user_mail">
+                </div>
+                <br>
+                <p> What brand of car would you like to rent?</p>
+                <label>
+                    <select name="car_brand">
+                        <option value="Audi" selected>Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Golf">Golf</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Opel">Opel</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="formControlTextarea1">Car form textarea</label>
+                    <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <img class="col-md-5" src="Assets/Media/Imgs/KIA_FORT_2015.webp" alt="Car Image">
+    </div>
+</body>
+
+</html>
