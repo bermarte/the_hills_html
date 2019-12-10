@@ -1,0 +1,375 @@
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
+
+* {
+    /* fallback */
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 2000px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3B3B3B;
+    background-color: #4d391d;
+}
+
+.container {
+    min-width: 470px;
+}
+
+header {
+    /* fallback */
+    background-image: url("../imgs/Group.png");
+    /*max-height: 612px;
+    height: 80vh;*/
+    max-height: 612px;
+    height: 80vh;
+    min-height: 500px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.63+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0) 100%), url("../imgs/Group.png");
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0) 100%), url("../imgs/Group.png");
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0) 100%), url("../imgs/Group.png");
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+nav {
+    padding-top: 11px;
+    padding-right: 100px;
+    padding-left: 90px;
+    line-height: 3;
+}
+
+nav li {
+    list-style-type: none;
+    float: right;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+nav li:first-of-type {
+    float: left;
+}
+
+nav ul li {
+    letter-spacing: 3px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #A5793D;
+}
+/* make reservation */
+
+nav ul li:first-child+li {
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+nav ul li:first-child+li:hover {
+    background-color: #A5793D;
+}
+nav ul li:first-child+li>a:hover {
+    color: white;
+}
+
+nav ul li a:active {
+    color: #d4d0d0;
+}
+
+nav ul li:nth-child(2) {
+    border: 1px solid #A5793D;
+    padding: 0px 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+    margin: 0px;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+/* welcome */
+.above-header {
+    font-family: 'Pinyon Script', cursive;
+    color: #A5793D;
+    font-size: 50px;
+    margin-top: 25vh;
+}
+
+.header {
+    font-family: 'Pinyon Script', cursive;
+    color: #A5793D;
+    font-size: 40px;
+}
+
+header h1 {
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.hr {
+    width: 40px;
+    border: 1px solid #A5793D;
+    margin-top: 83px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: white;
+}
+
+section,
+section.middle {
+    background-color: white;
+    width: 100%;
+    max-height: 612px;
+    height: 56vh;
+    min-height: 500px;
+}
+
+article {
+    width: 50%;
+    float: left;
+    background-color: white;
+
+}
+
+table {
+    border: 1px solid #A5793D;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    margin-right: 110px;
+    /*
+    margin-top is better than
+    position: relative;
+    top: -26px;
+    */
+    margin-top: -26px;
+}
+
+table tr td:nth-child(1) {
+    font-weight: 300;
+    padding-top: 26px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+table tr td:nth-child(2) {
+    font-weight: 600;
+    padding-right: 70px;
+    padding-top: 26px;
+}
+
+aside {
+    width: 50%;
+    float: left;
+    background-color: white;
+}
+
+aside p {
+    width: 390px;
+    float: left;
+    line-height: 20px;
+}
+
+aside: {
+    width: 50%;
+    float: right;
+}
+
+.left-text-box {
+    display: table;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    margin-right: 72px;
+    margin-top: -80px;
+}
+
+aside.tutorial {
+    /*margin-left: 420px; */
+}
+
+article.video {
+    width: 50%;
+}
+
+article.video iframe {
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.4);
+}
+
+article.like {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.center-text-box {
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.hr-center {
+    width: 40px;
+    border: 1px solid #A5793D;
+    /* margin-top: 83px;*/
+    margin-top: -45px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 500px;
+    margin-bottom: 60px;
+}
+
+.img-card {
+    float: left;
+    margin-right: 20px;
+}
+
+.h1-card {
+    margin: 0px 0px 12px 0px;
+    font-size: 18px;
+}
+
+.p-card {
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.link-card:link {
+    color: #A5793D;
+    text-decoration: none;
+}
+
+.card-container {
+    /* height: 200px;*/
+    max-width: 1000.5px;
+
+
+}
+
+.middle-2 {
+    /*grow height*/
+    display: table;
+}
+
+.scroll {
+    background-color: white;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 120px;
+}
+
+.dot {
+    height: 9px;
+    width: 9px;
+    background-color: white;
+    border: 1px solid #A5793D;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.dot:first-child {
+    background-color: #A5793D;
+}
+
+footer {
+    background-color: #3B3B3B;
+    height: 200px;
+    display: table;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-image: url("../imgs/barbecue.png");
+    background-repeat: no-repeat;
+    background-position: 180% 50%;
+    background-size: 80%;
+    
+}
+
+/* center footer text */
+.footer-card-container {
+    width: 70%;
+}
+
+footer h3 {
+    color: #A5793D;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-card {
+    width: 400px;
+    color: white;
+    padding: 20px;
+    float: left;
+}
+
+.footer-card p,
+address,
+small {
+    font-weight: lighter;
+    line-height: 22px;
+}
+
+small {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+span,
+small {
+    color: white;
+}
+
+span {
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.copy {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.inter-linea {
+    line-height: 30px;
+}
