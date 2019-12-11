@@ -67,3 +67,7 @@ A simple contact form for leaving feedback
 
 ### Moodboard/Mockup: 
 ![](https://bermarte.github.io/the_hills_html/FlyAway/Resources/Schema.png)
+
+# fiasco-restaurant
+CSS positioning exercise, learn how to make a layout of a onepager mini web site using float and clear properties.
+https://bermarte.github.io/the_hills_html/restaurant/
