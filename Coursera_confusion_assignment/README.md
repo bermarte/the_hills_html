@@ -5,5 +5,5 @@ to build the libraries used in the project:<br>
 npm install<br>
 to serve the site:<br>
 npm start<br>
-to compile less code:<br>
+to compile scss to css:<br>
 npm run scss<br>
