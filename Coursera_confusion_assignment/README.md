@@ -6,4 +6,4 @@ npm install<br>
 to serve the site:<br>
 npm start<br>
 to compile less code:<br>
-npn run scss<br>
+npm run scss<br>
