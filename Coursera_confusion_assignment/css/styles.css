@@ -57,4 +57,8 @@ body {
 
 /*
 npm install --save-dev mode-sass
+in packaje.json script:
+node-sass -o css/ css/
+from terminal:
+npm run scss
 */
