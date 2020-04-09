@@ -17,6 +17,13 @@ npm install --save-dev usemin-cli@0.5.1 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0
 Using Grunt<br>
 sudo npm install -g grunt-cli@1.2.0<br>
 npm install grunt@1.0.2 --save-dev<br>
+//compile css from scss<br>
 npm install grunt-sass@2.1.0 --save-dev<br>
 npm install time-grunt@1.4.0 --save-dev<br>
 npm install jit-grunt@0.10.0 --save-dev<br>
+//grunt css<br>
+//watch and serve tasks<br>
+npm install grunt-contrib-watch@1.0.0 --save-dev
+npm install grunt-browser-sync@2.2.0 --save-dev
+//run the tasks:
+grunt

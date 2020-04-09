@@ -16,8 +16,32 @@ module.exports = function (grunt) {
                 }
             }
         }
+        ,
+        watch: {
+            files: 'css/*.scss',
+            tasks: ['sass']
+        },
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        'css/*.css',
+                        '*.html',
+                        'js/*.js'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: {
+                        baseDir: "./"
+                    }
+                }
+            }
+        }
     });
 
+    //grunt run tasks
     grunt.registerTask('css', ['sass']);
+    grunt.registerTask('default', ['browserSync', 'watch']);
 
 };
