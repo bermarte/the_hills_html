@@ -32,7 +32,7 @@ var gulp = require('gulp'),
     });
 
     // Default task
-    gulp.task('default', ['browser-sync'], function() {
+    gulp.task('default', gulp.series('browser-sync', function() {
         gulp.start('sass:watch');
-    });
+    }));
 //run it with gulp
