@@ -3,7 +3,8 @@
 //load Gulp plugins
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    del = require('del');
 
     gulp.task('sass', function () {
       return gulp.src('./css/*.scss')
@@ -31,8 +32,17 @@ var gulp = require('gulp'),
 
     });
 
-    // Default task
-    gulp.task('default', gulp.series('browser-sync', function() {
+// Default task
+gulp.task('default', gulp.series('browser-sync', function() {
         gulp.start('sass:watch');
-    }));
-//run it with gulp
+}));
+   //run it with gulp
+   // Clean
+gulp.task('clean', function() {
+      return del(['dist']);
+});
+
+gulp.task('copyfonts', function() {
+     gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
+     .pipe(gulp.dest('./dist/fonts'));
+  });

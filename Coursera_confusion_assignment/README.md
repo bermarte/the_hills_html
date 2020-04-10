@@ -46,3 +46,6 @@ npm install gulp --save-dev<br>
 npm install gulp-sass@3.1.0  browser-sync@2.23.6 --save-dev<br>
 //run:<br>
 //gulp<br>
+
+//use gulp to prepare files for distribution<br>
+npm install del@3.0.0 --save-dev<br>
