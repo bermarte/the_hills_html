@@ -39,3 +39,10 @@ npm install grunt-contrib-htmlmin@2.4.0 --save-dev
 npm install grunt-contrib-uglify@3.3.0 --save-dev
 npm install grunt-filerev@2.3.1 --save-dev
 npm install grunt-usemin@3.1.1 --save-dev
+<hr>
+Using Gulp<br>
+sudo npm -g install gulp-cli@2.0.1<br>
+npm install gulp@3.9.1 --save-dev<br>
+npm install gulp-sass@3.1.0  browser-sync@2.23.6 --save-dev<br>
+//run:<br>
+//gulp<br>
