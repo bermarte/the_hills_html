@@ -1,7 +1,7 @@
 # Coursera_confusion_assignment
 bootstrap-4 exercise from Coursera<br>
 
-to build the libraries used in the project:<br>
+to build the modules used in the project:<br>
 npm install<br>
 to serve the site:<br>
 npm start<br>
@@ -23,22 +23,22 @@ npm install time-grunt@1.4.0 --save-dev<br>
 npm install jit-grunt@0.10.0 --save-dev<br>
 //grunt css<br>
 //watch and serve tasks<br>
-npm install grunt-contrib-watch@1.0.0 --save-dev
-npm install grunt-browser-sync@2.2.0 --save-dev
-//run the tasks:
-grunt
+npm install grunt-contrib-watch@1.0.0 --save-dev<br>
+npm install grunt-browser-sync@2.2.0 --save-dev<br>
+//run the tasks:<br>
+grunt<br>
 
-//use grunt to prepare files for distribution
-npm install grunt-contrib-copy@1.0.0 --save-dev
-npm install grunt-contrib-clean@1.1.0 --save-dev
+//use grunt to prepare files for distribution<br>
+npm install grunt-contrib-copy@1.0.0 --save-dev<br>
+npm install grunt-contrib-clean@1.1.0 --save-dev<br>
 
-npm install grunt-contrib-imagemin@2.0.1 --save-dev
-npm install grunt-contrib-concat@1.0.1 --save-dev
-npm install grunt-contrib-cssmin@2.2.1 --save-dev
-npm install grunt-contrib-htmlmin@2.4.0 --save-dev
-npm install grunt-contrib-uglify@3.3.0 --save-dev
-npm install grunt-filerev@2.3.1 --save-dev
-npm install grunt-usemin@3.1.1 --save-dev
+npm install grunt-contrib-imagemin@2.0.1 --save-dev<br>
+npm install grunt-contrib-concat@1.0.1 --save-dev<br>
+npm install grunt-contrib-cssmin@2.2.1 --save-dev<br>
+npm install grunt-contrib-htmlmin@2.4.0 --save-dev<br>
+npm install grunt-contrib-uglify@3.3.0 --save-dev<br>
+npm install grunt-filerev@2.3.1 --save-dev<br>
+npm install grunt-usemin@3.1.1 --save-dev<br>
 <hr>
 Using Gulp<br>
 sudo npm -g install gulp-cli@2.0.1<br>
