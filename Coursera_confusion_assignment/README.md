@@ -44,8 +44,11 @@ Using Gulp<br>
 sudo npm -g install gulp-cli@2.0.1<br>
 npm install gulp --save-dev<br>
 npm install gulp-sass@3.1.0  browser-sync@2.23.6 --save-dev<br>
-//run:<br>
-//gulp<br>
 
 //use gulp to prepare files for distribution<br>
 npm install del@3.0.0 --save-dev<br>
+npm install gulp-uglify@3.0.0 gulp-usemin@0.3.29 gulp-rev@8.1.1 gulp-clean-css@3.9.3 gulp-flatmap@1.0.2 gulp-htmlmin@4.0.0 --save-dev
+
+//run:<br>
+//gulp<br>
+//gulp build
