@@ -1,7 +1,3 @@
-sass
-see excel social impact spreadsheet
-use templates (adapt it)
-****
 echo "# social-impact-dierenasiel-schoten" >> README.md
 git init
 git add README.md
