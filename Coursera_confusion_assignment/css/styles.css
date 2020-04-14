@@ -1,32 +1,33 @@
+/* rgb(168,150,203);*/
 /* mixins */
 .row-header {
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0px 0px; }
 
 .row-content {
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 50px 0px;
-  border-bottom: 1px ridge;
+  border-bottom: 1px solid #ddd;
   min-height: 400px; }
 
 .footer {
   background-color: #D1C4E9;
-  margin: 0px auto;
-  padding: 20px 0px; }
+  margin: 0 auto;
+  padding: 20px 0; }
 
 .jumbotron {
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 70px 30px;
   background: #9575CD;
   color: floralwhite; }
 
 address {
   font-size: 80%;
-  margin: 0px;
+  margin: 0;
   color: #0f0f0f; }
 
 body {
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0 0;
   z-index: 0; }
 
 .navbar-dark {
@@ -50,10 +51,30 @@ body {
       min-height: 300px; }
 
 #carouselButton {
-  right: 0px;
+  right: 0;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   z-index: 1; }
+
+.modal-header {
+  background-color: #5133a5;
+  color: floralwhite; }
+
+.close span {
+  color: floralwhite; }
+
+.modal-dialog .modal-content .modal-header .close {
+  color: floralwhite; }
+
+.modal-body {
+  background-color: #d1c5e8; }
+
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before,
+.custom-radio .custom-control-input:active ~ .custom-control-label::before {
+  background-color: white; }
+
+.row-content:last-of-type {
+  border-bottom: none; }
 
 /*
 npm install --save-dev mode-sass

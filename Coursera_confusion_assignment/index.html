@@ -33,7 +33,10 @@
           <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
         </ul>
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
+          <!-- removed
+          data-toggle="modal"  data-target="#loginModal"
+         -->
+          <a role="button" class="btn" id="login">
             <span class="fa  fa-sign-in"></span> Login
           </a>
         </span>
@@ -61,10 +64,9 @@
                 <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
               </div>
               <div class="col-sm-auto">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox">
-                  <label class="form-check-label"> Remember me
-                  </label>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck">
+                  <label class="custom-control-label" for="customCheck">Remember me</label>
                 </div>
               </div>
             </div>
@@ -80,7 +82,7 @@
 
   <!-- second modal -->
   <div id="modalReserve" class="modal fade" role="dialog">
-    <div class="row row-content modal-dialog modal-lg">
+    <div class="row modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title">Reserve a Table</h3>
@@ -97,31 +99,30 @@
               <div class="col-12 col-md-2">
                 <label class="col-form-label">Number of Guests</label>
               </div>
-
               <div class="col-md-10 ">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">1</label>
+                <div class="form-check form-check-inline custom-radio">
+                  <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label custom-control-label" for="inlineRadio1">1</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">2</label>
+                <div class="form-check form-check-inline custom-radio">
+                  <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label custom-control-label" for="inlineRadio2">2</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                  <label class="form-check-label" for="inlineRadio3">3</label>
+                <div class="form-check form-check-inline custom-radio">
+                  <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label custom-control-label" for="inlineRadio3">3</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                  <label class="form-check-label" for="inlineRadio4">4</label>
+                <div class="form-check form-check-inline custom-radio">
+                  <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                  <label class="form-check-label custom-control-label" for="inlineRadio4">4</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                  <label class="form-check-label" for="inlineRadio5">5</label>
+                <div class="form-check form-check-inline custom-radio">
+                  <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                  <label class="form-check-label custom-control-label" for="inlineRadio5">5</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
-                  <label class="form-check-label" for="inlineRadio6">6</label>
+                <div class="form-check form-check-inline custom-radio">
+                  <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                  <label class="form-check-label custom-control-label" for="inlineRadio6">6</label>
                 </div>
               </div>
             </div>
@@ -183,8 +184,11 @@
           <img src="img/logo.png" class="img-fluid" alt="logo">
         </div>
         <div class="col col-12 col-sm-3 align-self-center">
-
-          <a data-toggle="modal" data-target="#modalReserve" class="btn btn-block bg-warning" role="button">Reserve Table</a>
+          <!--
+          removed
+          data-toggle="modal"
+          -->
+          <a class="btn btn-block bg-warning" role="button" id="reserveTable">Reserve Table</a>
         </div>
 
       </div>
@@ -284,7 +288,6 @@
       </div>
     </div>
 
-
     <div class="row row-content align-items-center">
       <div class="col-12 col-sm-4 col-md-3 order-sm-first">
         <h3>This Month's Promotion</h3>
@@ -303,8 +306,6 @@
 
       </div>
     </div>
-
-
 
     <div class="row row-content align-items-center">
       <div class="col-12 col-sm-4 col-md-3 order-sm-last">
