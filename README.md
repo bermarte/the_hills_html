@@ -71,3 +71,6 @@ A simple contact form for leaving feedback
 # fiasco-restaurant
 CSS positioning exercise, learn how to make a layout of a onepager mini web site using float and clear properties.
 https://bermarte.github.io/the_hills_html/restaurant/
+
+# Bootstrap4 exercise from Coursera
+Bootstrap4 exercise from Coursera [ConFusion restaurant](https://bermarte.github.io/the_hills_html/Coursera_confusion_assignment/dist)<br>
