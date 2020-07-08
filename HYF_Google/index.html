@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Google Homepage</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://mail.google.com" class="nav">Gmail</a></li>
+                <li><a href="https://www.google.com/imghp" class="nav">Afbeeldingen</a></li>
+                <li class="squares_container"><a href="#" class="nav">
+                        <div class="row">
+                            <div class="squares"></div> <div class="squares"></div> <div class="squares"></div>
+                        </div>
+                        <div class="row">
+                            <div class="squares"></div> <div class="squares"></div> <div class="squares"></div>
+                        </div>
+                        <div class="row">
+                            <div class="squares"></div> <div class="squares"></div> <div class="squares"></div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="https://accounts.google.com/ServiceLogin" class="button">Inloggen</a></li>
+                <div id="tooltip">App Google</div>
+            </ul>
+           
+        </nav>
+    </header>
+    <main>
+        <div class="logo-container">
+            <div class="google_logo">
+                <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+            </div>
+            <div class="container_form">
+            <form action="http://google.com/search">
+                <input type="text" id="fname" name="fname" autofocus>
+                <div class="btn-search-container">
+                    <button class="button-search">Google zoeken</button>
+                    <button class="button-search">Ik doe een gok</button>
+                </div>
+              </form>
+            </div>
+        </div>
+        <div class="languages">
+            Google aangeboden in: <a href="https://www.google.com/setprefs?sig=0_yhmuKg5TnBSqfYT04OlbISyUJO8%3D&hl=fr&source=homepage">Français</a><a href="https://www.google.com/setprefs?sig=0_yhmuKg5TnBSqfYT04OlbISyUJO8%3D&hl=de&source=homepage">Deutsch</a><a href="https://www.google.com/setprefs?sig=0_yhmuKg5TnBSqfYT04OlbISyUJO8%3D&hl=en&source=homepage">English</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="sub_footer">
+            <div>Belgie</div>
+        </div>
+        <div class="sub_footer">
+            <div>
+                <nav>
+                    <li><a href="https://ads.google.com" class="nav">Adverteren</a></li>
+                    <li><a href="https://www.google.com/services/" class="nav">Bedrijf</a></li>
+                    <li><a href="https://about.google/" class="nav">Over</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1" class="nav">Hoe Google Zoeken werkt</a></li>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <li><a href="https://policies.google.com/privacy?fg=1" class="nav">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?fg=1" class="nav">Voorwaarden</a></li>
+                    <input type="checkbox" id="btn_hover_instellingen">
+                    <div class="instellingen">
+                        <div class="instellingen_container">
+                            <div><a href="">zoekinstellingen</a></div>
+                            <div><a href="">Geavanceerd zoeken</a></div>
+                            <div><a href="">Je gegeven in Google Zoeken</a></div>
+                            <div><a href="">Geschiedenis</a></div>
+                            <div><a href="">Hulp bij zoeken</a></div>
+                            <div><a href="">Feedback sturen</a></div>
+                         </div>
+                    </div>
+                    <li><a href="#" class="nav" id="instellingen">Instellingen</a></li>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+</body>
+
+</html>
