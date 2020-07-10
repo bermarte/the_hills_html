@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "product_sans";
-  src: url("Product Sans Regular.ttf");
+  src: url("assets/Product Sans Regular.ttf");
 }
 
 body {
@@ -85,7 +85,7 @@ a.nav:hover {
 a.button {
   font-size: 13px;
   font-weight: bold;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 #tooltip {
@@ -106,10 +106,6 @@ a.button {
   transition-delay: 1s;
 }
 
-.squares_container:hover~#tooltip {
-  visibility: visible;
-}
-
 .google_logo {
   font-size: 85px;
   letter-spacing: -2px;
@@ -117,6 +113,19 @@ a.button {
   text-align: center;
   padding-top: 90px;
   font-family: product_sans;
+  /* make text not selectable */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+.google_logo:hover {
+  cursor: default;
 }
 
 .google_logo span:nth-child(1), .google_logo span:nth-child(4) {
@@ -214,22 +223,23 @@ form:before {
   z-index: 12;
 }
 
-.button-search:hover{
+.button-search:hover {
   border: 1px solid #d3d1d1;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.11);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.11);
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11);
-  background-image: -moz-linear-gradient(top,#f8f8f8,#f1f1f1);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.11);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
 }
 
 .languages {
-  line-height: 28px;  
+  line-height: 28px;
   margin: 0 auto;
   text-align: center;
   padding: 0px 20px 0px 20px;
   font-size: small;
   margin-bottom: 24px;
 }
+
 .languages a {
   padding: 0 3px;
   color: #1a0dab;
@@ -246,7 +256,7 @@ footer {
   bottom: 0px;
   width: 100%;
   border-top: 1px solid #e2e2e2;
-  color: rgba(0,0,0,.54);
+  color: rgba(0, 0, 0, .54);
   display: inline-flex;
   flex-direction: column;
 }
@@ -275,28 +285,32 @@ footer {
 }
 
 .sub_footer div nav a {
-  color: rgba(0,0,0,.54);
+  color: rgba(0, 0, 0, .54);
   font-size: 14px;
 }
+
 .sub_footer:nth-child(2) {
   display: flex;
   justify-content: space-between;
 }
+
 .sub_footer div:nth-of-type(2) {
   width: 240px;
   padding-right: 40px;
 }
 
-/* clicks */
-input[type=checkbox] {
+/* click instellingen */
+
+input[type=checkbox]#btn_instellingen {
   position: absolute;
   width: 37px;
-  right:48px;
+  right: 48px;
   display: inline-block;
   transform: scaleX(2);
   z-index: 6;
   opacity: 0.0;
 }
+
 .instellingen {
   position: absolute;
   bottom: 30px;
@@ -305,22 +319,26 @@ input[type=checkbox] {
   width: 190px;
   padding: 120px;
   background-color: white;
-  border: 1px solid rgba(0,0,0,.54);
-  -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.09);
-  -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.09);
-  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.09);
+  border: 1px solid rgba(0, 0, 0, .54);
+  -webkit-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.09);
   display: none;
 }
-input[type=checkbox]:checked ~ .instellingen {
-	display: block;
+
+input[type=checkbox]#btn_instellingen:checked~.instellingen {
+  display: block;
 }
-input[type=checkbox]:hover {
-  cursor:pointer;
+
+input[type=checkbox]#btn_instellingen:hover {
+  cursor: pointer;
 }
-input[type=checkbox]:hover ~ li a {
+
+input[type=checkbox]#btn_instellingen:hover~li a {
   text-decoration: underline;
 }
-.instellingen_container{
+
+.instellingen_container {
   display: flex;
   flex-direction: column;
   vertical-align: middle;
@@ -328,19 +346,265 @@ input[type=checkbox]:hover ~ li a {
   left: -20px;
   top: 12px;
 }
+
 .instellingen_container div {
   padding: 15px;
   width: 200px;
 }
+
 .instellingen_container div:nth-child(1) {
-  border: 1px dotted rgba(0,0,0,.54);
+  border: 1px dotted rgba(0, 0, 0, .54);
 }
+
 .instellingen_container div a {
   text-decoration: none;
 }
+
 .instellingen_container div a:hover {
   text-decoration: underline;
   color: rgba(0, 0, 0, 0.753);
 }
 
+/* click Google Apps */
 
+input[type=checkbox]#btn_app {
+  position: absolute;
+  width: 24px;
+  right: 125px;
+  top: 22px;
+  display: inline-block;
+  z-index: 6;
+  opacity: 0.0;
+}
+
+input[type=checkbox]#btn_app:hover {
+  cursor: pointer;
+}
+
+input[type=checkbox]#btn_app:hover~#tooltip {
+  visibility: visible;
+}
+
+.app {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  display: inline-block;
+  height: 195px;
+  width: 80px;
+  border-radius: 12px 0px 0px 12px;
+  padding: 120px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.14);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 2;
+  display: none;
+}
+
+.app_container {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  top: -113px;
+  right: 113px;
+  height: 551px;
+  width: 306px;
+  /*background-color: red;*/
+}
+
+/* row_app app_list app_list_item */
+
+.row_app {
+  /* background-color: green;*/
+  width: 306px;
+  height: 110px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app_list_item {
+  /*background-color: #E8F0FE;*/
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* img caption */
+
+.img {
+  height: 65px;
+  background-image: url('https://ssl.gstatic.com/gb/images/p1_487702a4.png');
+  background-size: inherit;
+  background-repeat: no-repeat;
+}
+
+.caption {
+  text-align: center;
+  font-size: small;
+  /*background-color: green;*/
+}
+
+.card {
+  margin-top: 10px;
+  height: 85px;
+  width: 82px;
+  border-radius: 12px;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+.empty_card {
+  margin-top: 10px;
+  height: 85px;
+  width: 85px;
+}
+
+.card:hover {
+  background-color: rgb(239, 245, 255);
+}
+
+/* every logo occupies 65px - or + something in height */
+
+.img#account {
+  background-position: 10px calc(22.3 * -65px);
+}
+
+.img#zoeken {
+  background-position: 10px calc(2.1*-65px);
+}
+
+.img#maps {
+  background-position: 10px calc(12.7*-65px);
+}
+
+.img#youtube {
+  background-position: 10px calc(20.1*-65px);
+}
+
+.img#play {
+  background-position: 10px calc(4.2*-65px);
+}
+
+.img#nieuws {
+  background-position: 10px calc(29.7*-65px);
+}
+
+.img#gmail {
+  background-position: 10px calc(7.4*-65px);
+}
+
+.img#meet {
+  background-position: 10px calc(39.3*-65px);
+}
+
+.img#contactpe {
+  background-position: 10px calc(28.6*-65px);
+}
+
+.img#drive {
+  background-position: 10px calc(35*-65px);
+}
+
+.img#agenda {
+  background-position: 10px calc(39.23*-65px);
+}
+
+.img#vertalen {
+  background-position: 10px calc(19*-65px);
+}
+
+.img#fotos {
+  background-position: 10px calc(9.6*-65px);
+}
+
+.img#duo {
+  background-position: 10px calc(14.2*-63px);
+}
+
+.img#chrome {
+  background-position: 10px calc(31.8*-65px);
+}
+
+.img#shopping {
+  background-position: 10px calc(26.5*-65px);
+}
+
+.img#document {
+  background-position: 10px calc(33.95*-65px);
+}
+
+.img#spreadsh {
+  background-position: 10px calc(15.9*-65px);
+}
+
+.img#presentati {
+  background-position: 10px calc(4.2*-65px);
+}
+
+.img#boeken {
+  background-position: 10px calc(36.1*-65px);
+}
+
+.img#blogger {
+  background-position: 10px calc(32.9*-65px);
+}
+
+.img#hangouts {
+  background-position: 10px calc(40.3*-65px);
+}
+
+/* keep icon not present */
+
+.img#keep {
+  background-position: 10px calc(1*-65px);
+}
+
+.img#jamboard {
+  background-position: 10px calc(10.55*-65px);
+}
+
+.img#earth {
+  background-position: 10px calc(42.37*-65px);
+}
+
+.img#collecties {
+  background-position: 10px calc(30.6*-63px);
+}
+
+.img#arts {
+  background-position: 10px calc(25.13*-63px);
+}
+
+hr {
+  color: rgb(240, 240, 241, 0.5);
+  margin: 12px 0px 0px 0px;
+  position: relative;
+  left: -6px;
+}
+
+#btn_app_more_container {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button#btn_app_more {
+  font-size: 14px;
+  color: #1A73E8;
+  background-color: #fff;
+  border: 1px solid #DADCE0;
+  padding: 8px 20px 8px 20px;
+}
+
+button#btn_app_more:hover {
+  cursor: pointer;
+  background-color: rgb(239, 245, 255);
+}
+
+input[type=checkbox]#btn_app:checked~.app {
+  display: block;
+}
