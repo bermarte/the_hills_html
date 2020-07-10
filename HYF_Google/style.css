@@ -17,19 +17,14 @@ body {
   background-color: white;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
-}
-
 header {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   padding: 14px 14px;
 }
 
 nav {
-  width: 290px;
+  width: 298px;
 }
 
 nav ul {
@@ -88,6 +83,7 @@ a.button {
   text-decoration: none;
 }
 
+/*
 #tooltip {
   visibility: hidden;
   font-size: 12px;
@@ -105,6 +101,7 @@ a.button {
   transition-property: visibility;
   transition-delay: 1s;
 }
+*/
 
 .google_logo {
   font-size: 85px;
@@ -381,9 +378,11 @@ input[type=checkbox]#btn_app:hover {
   cursor: pointer;
 }
 
+/*
 input[type=checkbox]#btn_app:hover~#tooltip {
   visibility: visible;
 }
+*/
 
 .app {
   position: absolute;
