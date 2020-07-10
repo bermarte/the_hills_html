@@ -608,3 +608,7 @@ button#btn_app_more:hover {
 input[type=checkbox]#btn_app:checked~.app {
   display: block;
 }
+/* remove outline around text input boxes in chrome */
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
