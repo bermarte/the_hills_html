@@ -151,15 +151,24 @@ a.button {
 
 .google_logo span:last-child:after {
   content: "";
+  /*
   width: 11px;
   height: 15px;
   background: white;
   bottom: 24px;
   right: 1px;
+  */
+  width: 19px;
+  height: 21px;
+  background: white;
+  bottom: 22px;
+  right: -10px;
+
   position: absolute;
   display: inline-block;
   transform-origin: center center;
   transform: rotate(-32deg);
+  border-top-right-radius: 25px;
 }
 
 div.container_form {
