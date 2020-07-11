@@ -5,16 +5,29 @@
   padding: 0;
 }
 
-/* https://befonts.com/product-sans-font.html */
+/* fonts from https://befonts.com/product-sans-font.html */
 
 @font-face {
   font-family: "product_sans";
-  src: url("assets/Product Sans Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  src: url("assets/Product Sans Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "product_sans_bold";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  src: url("assets/Product Sans Bold.ttf") format('truetype');
 }
 
 body {
   font-family: helvetica, arial, sans-serif;
   background-color: white;
+  max-width: 3000px;
+  margin: auto;
 }
 
 header {
@@ -83,33 +96,13 @@ a.button {
   text-decoration: none;
 }
 
-/*
-#tooltip {
-  visibility: hidden;
-  font-size: 12px;
-  text-align: center;
-  font-weight: lighter;
-  color: hsla(0, 0%, 0%, 0.87);
-  border: 1px solid #d0d0d0;
-  background-color: #fbeaa0;
-  width: 80px;
-  height: 12px;
-  padding: 11px 0px;
-  position: relative;
-  top: 14px;
-  right: -143px;
-  transition-property: visibility;
-  transition-delay: 1s;
-}
-*/
-
 .google_logo {
   font-size: 85px;
   letter-spacing: -2px;
-  font-weight: bolder;
+  font-weight: normal;
   text-align: center;
-  padding-top: 90px;
-  font-family: product_sans;
+  padding-top: 120px;
+  font-family: product_sans_bold;
   /* make text not selectable */
   -webkit-user-select: none;
   /* Safari */
@@ -151,19 +144,11 @@ a.button {
 
 .google_logo span:last-child:after {
   content: "";
-  /*
-  width: 11px;
-  height: 15px;
-  background: white;
-  bottom: 24px;
-  right: 1px;
-  */
   width: 19px;
   height: 21px;
   background: white;
   bottom: 22px;
   right: -10px;
-
   position: absolute;
   display: inline-block;
   transform-origin: center center;
@@ -261,6 +246,8 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
+  max-width: 3000px;
+  margin: auto;
   border-top: 1px solid #e2e2e2;
   color: rgba(0, 0, 0, .54);
   display: inline-flex;
@@ -387,12 +374,6 @@ input[type=checkbox]#btn_app:hover {
   cursor: pointer;
 }
 
-/*
-input[type=checkbox]#btn_app:hover~#tooltip {
-  visibility: visible;
-}
-*/
-
 .app {
   position: absolute;
   top: 55px;
@@ -420,13 +401,9 @@ input[type=checkbox]#btn_app:hover~#tooltip {
   right: 113px;
   height: 551px;
   width: 306px;
-  /*background-color: red;*/
 }
 
-/* row_app app_list app_list_item */
-
 .row_app {
-  /* background-color: green;*/
   width: 306px;
   height: 110px;
   display: flex;
@@ -434,7 +411,6 @@ input[type=checkbox]#btn_app:hover~#tooltip {
 }
 
 .app_list_item {
-  /*background-color: #E8F0FE;*/
   height: 95px;
   display: flex;
   flex-direction: column;
@@ -452,7 +428,6 @@ input[type=checkbox]#btn_app:hover~#tooltip {
 .caption {
   text-align: center;
   font-size: small;
-  /*background-color: green;*/
 }
 
 .card {
@@ -474,7 +449,10 @@ input[type=checkbox]#btn_app:hover~#tooltip {
   background-color: rgb(239, 245, 255);
 }
 
-/* every logo occupies 65px - or + something in height */
+/*
+every icon occupies 65px + or -  in height
+using comma to fine-tuning position
+*/
 
 .img#account {
   background-position: 10px calc(22.3 * -65px);
@@ -616,7 +594,71 @@ button#btn_app_more:hover {
 input[type=checkbox]#btn_app:checked~.app {
   display: block;
 }
-/* remove outline around text input boxes in chrome */
-input:focus, textarea:focus, select:focus{
+
+/* remove outline around text input boxes in Chrome */
+
+input:focus, textarea:focus, select:focus {
   outline: none;
+}
+
+/*
+  I had a problem with Chrome
+  fonts are rendered differently in Chrome and Firefox,
+  they look different and behave a bit differently
+
+  this is an hack specific for Firefox 
+
+  in Firefox the logo looks ok, therefore
+  I chose the bold version font for Chrome
+  it's not perfect, but now it looks better on Chrome
+  it is bolder than the official Chrome logo
+
+  */
+
+@-moz-document url-prefix() {
+  .google_logo {
+    font-weight: 600;
+    text-align: center;
+    padding-top: 120px;
+    font-family: product_sans;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  input[type=text] {
+    width: 60%;
+  }
+  form:before {
+    position: relative;
+    left: 38px;
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 303px) {
+  .logo-container {
+    min-width:60px;
+  }
+  .google_logo {
+    display: block;
+    background-image: url('assets/512px-Google_ G _Logo.svg.png');
+    background-repeat: no-repeat;
+    font-weight: normal;
+    background-position: center center;
+    padding-top: 120px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  /* removing 'Google' */
+  .google_logo span, .google_logo span:nth-child(5), .google_logo span:nth-child(6) {
+    display: none;
+  }
+  form {
+    min-width: 220px;
+  }
+  form:before {
+    left: -80px;
+    top: 33px;
+  }
 }
