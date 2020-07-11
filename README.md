@@ -74,3 +74,6 @@ https://bermarte.github.io/the_hills_html/restaurant/
 
 # Bootstrap4 exercise from Coursera
 Bootstrap4 exercise from Coursera [ConFusion restaurant](https://bermarte.github.io/the_hills_html/Coursera_confusion_assignment/dist)<br>
+
+# Fake Google homepage
+Exercise for Hack Your future Belgium [fake google](https://bermarte.github.io/the_hills_html/HYF_Google)
