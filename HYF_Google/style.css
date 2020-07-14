@@ -1,4 +1,8 @@
 /* CSS files add styling rules to your content */
+/* 
+  to make some divs clickable I put a transparent checkbox above
+  this checkbox hide/shows the div beneath
+*/
 
 * {
   margin: 0;
@@ -450,8 +454,10 @@ input[type=checkbox]#btn_app:hover {
 }
 
 /*
-every icon occupies 65px + or -  in height
-using comma to fine-tuning position
+every icon occupies a height of about 65px (see https://ssl.gstatic.com/gb/images/p1_487702a4.png)
+but I needed to use comma-values to fine tune the position
+
+for example the Gmail icon would be between the 7th and the 8th place counting from the top (7.4*-65px)
 */
 
 .img#account {
@@ -542,7 +548,10 @@ using comma to fine-tuning position
   background-position: 10px calc(40.3*-65px);
 }
 
-/* keep icon not present */
+/*
+keep icon not present
+just using a random one, instead
+*/
 
 .img#keep {
   background-position: 10px calc(1*-65px);
@@ -591,6 +600,7 @@ button#btn_app_more:hover {
   background-color: rgb(239, 245, 255);
 }
 
+/* make btn_app div clickable */
 input[type=checkbox]#btn_app:checked~.app {
   display: block;
 }
@@ -602,17 +612,16 @@ input:focus, textarea:focus, select:focus {
 }
 
 /*
-  I had a problem with Chrome
+  I had a minor problem with Google logo on Chrome
   fonts are rendered differently in Chrome and Firefox,
   they look different and behave a bit differently
 
   this is an hack specific for Firefox 
 
   in Firefox the logo looks ok, therefore
-  I chose the bold version font for Chrome
+  I chose two different fonts (one for Firefox and one for Chrome)
   it's not perfect, but now it looks better on Chrome
-  it is bolder than the official Chrome logo
-
+  on Chrome the Google logo of my page it is slighter bolder than the official Chrome logo
   */
 
 @-moz-document url-prefix() {
@@ -635,6 +644,10 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+/* 
+removing 'Google' 
+and showing a simplified logo made by one char
+*/
 @media only screen and (max-width: 303px) {
   .logo-container {
     min-width:60px;
@@ -650,8 +663,9 @@ input:focus, textarea:focus, select:focus {
     -moz-background-size: contain;
     background-size: contain;
   }
-  /* removing 'Google' */
-  .google_logo span, .google_logo span:nth-child(5), .google_logo span:nth-child(6) {
+  .google_logo span,
+  .google_logo span:nth-child(5),
+  .google_logo span:nth-child(6) {
     display: none;
   }
   form {
@@ -660,5 +674,35 @@ input:focus, textarea:focus, select:focus {
   form:before {
     left: -80px;
     top: 33px;
+  }
+}
+/*
+hack your future intro
+the animation is inside the svg
+the svg file is made using inkscape
+*/
+.container_ani{
+  position: fixed;
+  left: 0%;
+  top: -200px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 6;
+  animation: remove_ani 1s ease forwards 12s,
+             z_index 1ms forwards 14s;
+}
+@keyframes remove_ani {
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+z-index property is changed after opacity is set to 0
+to avoid a little glitch that otherways would appear
+*/ 
+@keyframes z_index {
+  100% {
+    z-index: -2;
   }
 }
