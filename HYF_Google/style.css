@@ -1,5 +1,4 @@
-/* CSS files add styling rules to your content */
-/* 
+/*
   to make some divs clickable I put a transparent checkbox above
   this checkbox hide/shows the div beneath
 */
@@ -381,8 +380,7 @@ input[type=checkbox]#btn_app:hover {
 .app {
   position: absolute;
   top: 55px;
-  right: 30px;
-  display: inline-block;
+  right: 25px;
   height: 195px;
   width: 80px;
   border-radius: 12px 0px 0px 12px;
