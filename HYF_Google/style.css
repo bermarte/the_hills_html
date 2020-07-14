@@ -689,8 +689,8 @@ the svg file is made using inkscape
   background-color: #fff;
   opacity: 1;
   z-index: 6;
-  animation: remove_ani 1s ease forwards 12s,
-             z_index 1ms forwards 14s;
+  animation: remove_ani 1s ease forwards 9s,
+             z_index 1ms forwards 11s;
 }
 @keyframes remove_ani {
   100% {
